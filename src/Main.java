@@ -47,8 +47,8 @@ class taskClass implements Runnable{
         }
         if (this.type==1){//Thread stuff for Word Processor
             for (int i=1; i<=this.times;i++){
-                System.out.print(this.aChar);
                 if (i%10==0){
+                    System.out.print("WP"+i);
                     System.out.println();
                     Thread.yield();
                 }
@@ -56,8 +56,8 @@ class taskClass implements Runnable{
         }
         if (this.type==2){//thread stuff for Data Storage
             for(int i=1; i<=this.times; i++){
-                System.out.print("DS:"+ i);
                 if (i%60==0){
+                    System.out.print("DS:"+ i);
                     System.out.println();
                     Thread.yield();
                 }
@@ -65,8 +65,8 @@ class taskClass implements Runnable{
         }
         if (this.type==3){
             for (int i=1; i<this.times; i++){
-                System.out.print("Print Line: "+i+" chars AA thru BB");
                 if (i%6==0){
+                    System.out.print("Print Line: "+i+" chars AA thru BB");
                     System.out.println();
                     Thread.yield();
                 }
